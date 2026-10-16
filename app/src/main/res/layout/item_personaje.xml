@@ -6,39 +6,53 @@
     android:layout_marginLeft="20dp"
     app:cardElevation="20dp"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardBackgroundColor="#2E7D32"
-    app:cardCornerRadius="12dp"
+    android:layout_margin="0dp"
+    app:cardBackgroundColor="@color/black"
     >
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#03C04A">
+
         <ImageView
             android:id="@+id/foto"
             android:layout_width="100dp"
-            android:layout_height="100dp"/>
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Imagen del personaje" />
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"/>
-        <TextView
-            android:id="@+id/nombre_jsr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic|bold"
-            android:textColor="@color/black"
-            android:text="hola"/>
-        <TextView
-            android:id="@+id/detalles_jsr"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="#FFBF00"
-            android:text="curso"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/nombre_jsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hola"
+                android:textStyle="bold|italic"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/detalles_jsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="curso"
+                android:textColor="#FFBF00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="start" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

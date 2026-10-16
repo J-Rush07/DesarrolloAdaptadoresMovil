@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             Personaje Personaje6 = new Personaje("https://static.wikia.nocookie.net/jetsetradio/images/0/01/Sniper_jsr.png/revision/latest/scale-to-width-down/223?cb=20230623212223","The golder Rhinos",
-                    " Pandilla rival, Son un grupo de mercenarios que trabajan para la corporación Rokkaku. Utilizan armamento y fuerza para perseguir a los patinadores y ayudar a imponer el control sobre la ciudad.");
+                    " Pandilla rival, Son un grupo de mercenarios que trabajan para la corporación Rokkaku");
 
             ListaPersonajes.addAll(Arrays.asList(
             Personaje1,
