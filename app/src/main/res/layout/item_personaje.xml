@@ -5,9 +5,11 @@
     android:layout_marginRight="20dp"
     android:layout_marginLeft="20dp"
     app:cardElevation="20dp"
-    android:layout_height="100dp"
-    android:layout_margin="10dp">
-
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#2E7D32"
+    app:cardCornerRadius="12dp"
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -19,22 +21,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"/>
         <TextView
             android:id="@+id/nombre_jsr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:textStyle="italic|bold"
             android:textColor="@color/black"
             android:text="hola"/>
         <TextView
             android:id="@+id/detalles_jsr"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFBF00"
             android:text="curso"
-            android:textColor="@color/black"
             android:textStyle="bold" />
 
     </LinearLayout>
